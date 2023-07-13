@@ -33,3 +33,23 @@
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url("./ubuntu-mono-v15-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4164744 */
+  src: url('//at.alicdn.com/t/c/font_4164744_kahqnx72pu.woff2?t=1689215490235') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4164744_kahqnx72pu.woff?t=1689215490235') format('woff'),
+       url('//at.alicdn.com/t/c/font_4164744_kahqnx72pu.ttf?t=1689215490235') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qq:before {
+  content: "\e605";
+}
+
