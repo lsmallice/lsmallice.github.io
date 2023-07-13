@@ -509,6 +509,22 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>java</title>
+    <url>/posts/7f1ae6d2.html</url>
+    <content><![CDATA[<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/posts/7f1ae6d2/WX20230712-173732@2x.png"
+                      class=""
+                >
+]]></content>
+      <tags>
+        <tag>java</tag>
+        <tag>jdbc</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql的安装和配置</title>
     <url>/posts/14d76352.html</url>
     <content><![CDATA[<h1 id="1-MySQL介绍"><a href="#1-MySQL介绍" class="headerlink" title="1. MySQL介绍"></a>1. MySQL介绍</h1><blockquote>
@@ -666,22 +682,6 @@
     <content><![CDATA[]]></content>
       <tags>
         <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java</title>
-    <url>/posts/7f1ae6d2.html</url>
-    <content><![CDATA[<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/posts/7f1ae6d2/WX20230712-173732@2x.png"
-                      class=""
-                >
-]]></content>
-      <tags>
-        <tag>mysql</tag>
-        <tag>java</tag>
-        <tag>jdbc</tag>
       </tags>
   </entry>
   <entry>
