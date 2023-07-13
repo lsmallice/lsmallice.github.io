@@ -208,6 +208,11 @@
       </tags>
   </entry>
   <entry>
+    <title>friends</title>
+    <url>/posts/21ee7069.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/posts/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -229,11 +234,6 @@
       <tags>
         <tag>Hero</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>friends</title>
-    <url>/posts/21ee7069.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hello Hexo+GIthub搭建博客服务器</title>
@@ -530,14 +530,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mysql函数</title>
-    <url>/posts/df369d3b.html</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql的安装和配置</title>
     <url>/posts/14d76352.html</url>
     <content><![CDATA[<h1 id="1-MySQL介绍"><a href="#1-MySQL介绍" class="headerlink" title="1. MySQL介绍"></a>1. MySQL介绍</h1><blockquote>
@@ -685,6 +677,14 @@
 </ol>
 </blockquote>
 ]]></content>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql函数</title>
+    <url>/posts/df369d3b.html</url>
+    <content><![CDATA[]]></content>
       <tags>
         <tag>mysql</tag>
       </tags>
