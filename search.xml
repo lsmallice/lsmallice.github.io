@@ -525,6 +525,146 @@
       </tags>
   </entry>
   <entry>
+    <title>mysql练习</title>
+    <url>/posts/c1d94981.html</url>
+    <content><![CDATA[<p>用于熟悉mysql的基本知识</p>
+<span id="more"></span>
+
+<h3 id="导入数据库脚本"><a href="#导入数据库脚本" class="headerlink" title="导入数据库脚本"></a>导入数据库脚本</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line"> Navicat Premium Data Transfer</span><br><span class="line"></span><br><span class="line"> Source Server         : ali</span><br><span class="line"> Source Server Type    : MySQL</span><br><span class="line"> Source Server Version : 80026 (8.0.26)</span><br><span class="line"> Source Schema         : kd</span><br><span class="line"></span><br><span class="line"> Date: 11/07/2023 20:44:05</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">SET NAMES utf8mb4;</span><br><span class="line">SET FOREIGN_KEY_CHECKS = 0;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for dept</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `dept`;</span><br><span class="line">CREATE TABLE `dept` (</span><br><span class="line">  `deptno` int NOT NULL,</span><br><span class="line">  `dname` varchar(20) NOT NULL,</span><br><span class="line">  `loc` varchar(20) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`deptno`),</span><br><span class="line">  UNIQUE KEY `dname` (`dname`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of dept</span><br><span class="line">-- ----------------------------</span><br><span class="line">BEGIN;</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (10, &#x27;ACCOUNTING&#x27;, &#x27;NEW YORK&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (20, &#x27;RESEARCH&#x27;, &#x27;shanghai&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (30, &#x27;SALES&#x27;, &#x27;beijing&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (40, &#x27;OPERATIONS&#x27;, &#x27;suzhou&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (50, &#x27;ADMIN&#x27;, &#x27;suzhou&#x27;);</span><br><span class="line">COMMIT;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for emp</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `emp`;</span><br><span class="line">CREATE TABLE `emp` (</span><br><span class="line">  `empno` int NOT NULL,</span><br><span class="line">  `ename` varchar(10) DEFAULT NULL,</span><br><span class="line">  `job` varchar(9) DEFAULT NULL,</span><br><span class="line">  `mgr` int DEFAULT NULL,</span><br><span class="line">  `hiredate` date DEFAULT NULL,</span><br><span class="line">  `salary` float DEFAULT NULL,</span><br><span class="line">  `comm` float DEFAULT NULL,</span><br><span class="line">  `deptno` int DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`empno`),</span><br><span class="line">  KEY `fk_emp_dept` (`deptno`),</span><br><span class="line">  CONSTRAINT `fk_emp_dept` FOREIGN KEY (`deptno`) REFERENCES `dept` (`deptno`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of emp</span><br><span class="line">-- ----------------------------</span><br><span class="line">BEGIN;</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7369, &#x27;SMITH&#x27;, &#x27;CLERK&#x27;, 7902, &#x27;1980-12-17&#x27;, 800, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7499, &#x27;ALLEN&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-02-20&#x27;, 1600, 300, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7521, &#x27;WARD&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-02-22&#x27;, 1250, 500, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7566, &#x27;JONES&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1981-04-02&#x27;, 2975, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7654, &#x27;MARTIN&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-05-01&#x27;, 1250, 1400, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7698, &#x27;BLAKE&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1981-06-09&#x27;, 2850, NULL, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7782, &#x27;CLARK&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1987-07-01&#x27;, 2450, NULL, 10);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7788, &#x27;SCOTT&#x27;, &#x27;ANALYST&#x27;, 7566, &#x27;1981-11-17&#x27;, 3000, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7839, &#x27;KING&#x27;, &#x27;PRESIDENT&#x27;, NULL, &#x27;1987-12-03&#x27;, 5000, NULL, 10);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7844, &#x27;TURNER&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-03-12&#x27;, 1500, 0, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7876, &#x27;ADAMS&#x27;, &#x27;CLERK&#x27;, 7788, &#x27;1981-02-13&#x27;, 1100, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7900, &#x27;JAMES&#x27;, &#x27;CLERK&#x27;, 7698, &#x27;1981-12-03&#x27;, 950, NULL, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7902, &#x27;FORD&#x27;, &#x27;ANALYST&#x27;, 7566, &#x27;1981-09-08&#x27;, 3000, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7934, &#x27;MILLER&#x27;, &#x27;CLERK&#x27;, 7782, &#x27;1981-06-02&#x27;, 1300, NULL, 10);</span><br><span class="line">COMMIT;</span><br><span class="line"></span><br><span class="line">SET FOREIGN_KEY_CHECKS = 1;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+
+
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="【0-简单查询】"><a href="#【0-简单查询】" class="headerlink" title="【0. 简单查询】"></a>【0. 简单查询】</h4><ol>
+<li><p>查出在10部门的员工名字,工资</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	deptno = 10;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>找出工资大于1200元的员工全名、工资、职称</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary,</span><br><span class="line">	job </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary &gt; 1200;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>查出在10，30部门的员工名,薪水</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	deptno IN ( 10, 30 );</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>找出工资大于1500并且没有提成的员工</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary &gt; 1500 </span><br><span class="line">	AND comm IS NULL;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查出名字是以M打头的员工</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	SUBSTR( ename, 1, 1 ) = &#x27;M&#x27;;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查出姓名中第三个字母是e的员工</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	SUBSTR( ename, 3, 1 ) = &#x27;e&#x27;;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>找出没有提成率的员工</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	comm IS NULL;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>找出工资在950(含)至1200(含)元的员工姓名、职称</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	job </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary BETWEEN 950 </span><br><span class="line">	AND 1200;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>找出2月份入职的员工名、入职时间、工资</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	hiredate,</span><br><span class="line">	salary</span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	MONTH(hiredate) = 2;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查询出所有员工的职位，不重复</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	DISTINCT job</span><br><span class="line">FROM</span><br><span class="line">	emp ;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查询出各个部门的员工数量</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	COUNT( ename ) 员工数量,</span><br><span class="line">	dept.dname 部门</span><br><span class="line">FROM</span><br><span class="line">	emp</span><br><span class="line">	LEFT JOIN dept ON dept.deptno = emp.deptno</span><br><span class="line">GROUP BY</span><br><span class="line">	dept.deptno;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查询出各年份入职的员工情况（年份，员工人数）</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT </span><br><span class="line">	YEAR( hiredate ) 年份,</span><br><span class="line">	COUNT( empno ) </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">GROUP BY 年份;</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>查询出每年每月入职的员工情况（年份月份，员工人数）</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT </span><br><span class="line">	DATE_FORMAT(hiredate,&#x27;%Y年%m月&#x27;)年份,</span><br><span class="line">	COUNT( empno ) </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">GROUP BY 年份;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h4 id="【1-字符函数】"><a href="#【1-字符函数】" class="headerlink" title="【1. 字符函数】"></a>【1. 字符函数】</h4><ol>
+<li><p>获得’goodmorning’ 的字符长度</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT CHAR_LENGTH(&#x27;goodmorning&#x27;);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将Hello全部转换成小写字母</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT LOWER(&#x27;Hello&#x27;);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将Hello全部转换成大写字母</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT UPPER(&#x27;Hello&#x27;);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将hello首字母变为大写字母	 </p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT INSERT(&#x27;hello&#x27;,1,1,UPPER(SUBSTR(&#x27;hello&#x27;,1,1)));</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将’hello’ 与 ‘tom’  ,’good’拼接成一个单词</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT CONCAT(&#x27;hello&#x27;,&#x27;tom&#x27;,&#x27;good&#x27;);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得’goodmorning’ 的第4 个字母	 </p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT SUBSTR(&#x27;goodmorning&#x27;,4,1);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>截取’goodmorning’ 的monring 单词</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT SUBSTR(&#x27;goodmorning&#x27;,POSITION(&#x27;morning&#x27; IN &#x27;goodmorning&#x27;),CHAR_LENGTH(&#x27;morning&#x27;));</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>截取’Good  morning ！I’m Tom ‘   中的’o’ 用’A’来替代</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT REPLACE(&#x27;Good  morning ！I\&#x27;m Tom&#x27;,&#x27;o&#x27;,&#x27;A&#x27;)</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h4 id="【2-日期函数】"><a href="#【2-日期函数】" class="headerlink" title="【2. 日期函数】"></a>【2. 日期函数】</h4><ol>
+<li><p>获得当前日期</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT NOW()</span><br></pre></td></tr></table></figure></div>
+
+
+</li>
+<li><p>获得某一个日期的年份，月份，日期</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT YEAR(NOW()),MONTH(NOW()), DAY(NOW());</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得某一个日期的星期</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DAYOFWEEK(NOW())-1;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得当前日期的时分秒</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_FORMAT(NOW(),&#x27;%H:%i:%s&#x27;);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得2天后的日期</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_ADD(NOW(),interval 2 day);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得前2天的日期</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_SUB(NOW(),interval 2 day);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得两个日期相差的年份，月份，天数</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT timestampdiff(YEAR,&#x27;2000-11-28&#x27;,NOW()),timestampdiff(MONTH,&#x27;2000-11-28&#x27;,NOW()),timestampdiff(DAY,&#x27;2000-11-28&#x27;,NOW());</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h4 id="【3-数值函数】"><a href="#【3-数值函数】" class="headerlink" title="【3. 数值函数】"></a>【3. 数值函数】</h4><ol>
+<li><p>获得38934.4383的整数部分</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT truncate(38934.4383,0)</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将38934.4387的保留2位小数，不需要四舍五入</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT truncate(38934.4383,2)</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将38934.4387的保留2位小数，需要四舍五入</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT ROUND(38934.4383,2);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得不小于38934.4383的最小正整数</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT ceiling(38934.4383);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>获得不大于38934.4383的最大的正整数</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT floor(38934.4383);</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mysql的安装和配置</title>
     <url>/posts/14d76352.html</url>
     <content><![CDATA[<h1 id="1-MySQL介绍"><a href="#1-MySQL介绍" class="headerlink" title="1. MySQL介绍"></a>1. MySQL介绍</h1><blockquote>
@@ -680,146 +820,6 @@
     <title>mysql函数</title>
     <url>/posts/df369d3b.html</url>
     <content><![CDATA[]]></content>
-      <tags>
-        <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql练习</title>
-    <url>/posts/c1d94981.html</url>
-    <content><![CDATA[<p>用于熟悉mysql的基本知识</p>
-<span id="more"></span>
-
-<h3 id="导入数据库脚本"><a href="#导入数据库脚本" class="headerlink" title="导入数据库脚本"></a>导入数据库脚本</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line"> Navicat Premium Data Transfer</span><br><span class="line"></span><br><span class="line"> Source Server         : ali</span><br><span class="line"> Source Server Type    : MySQL</span><br><span class="line"> Source Server Version : 80026 (8.0.26)</span><br><span class="line"> Source Schema         : kd</span><br><span class="line"></span><br><span class="line"> Date: 11/07/2023 20:44:05</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">SET NAMES utf8mb4;</span><br><span class="line">SET FOREIGN_KEY_CHECKS = 0;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for dept</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `dept`;</span><br><span class="line">CREATE TABLE `dept` (</span><br><span class="line">  `deptno` int NOT NULL,</span><br><span class="line">  `dname` varchar(20) NOT NULL,</span><br><span class="line">  `loc` varchar(20) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`deptno`),</span><br><span class="line">  UNIQUE KEY `dname` (`dname`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of dept</span><br><span class="line">-- ----------------------------</span><br><span class="line">BEGIN;</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (10, &#x27;ACCOUNTING&#x27;, &#x27;NEW YORK&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (20, &#x27;RESEARCH&#x27;, &#x27;shanghai&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (30, &#x27;SALES&#x27;, &#x27;beijing&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (40, &#x27;OPERATIONS&#x27;, &#x27;suzhou&#x27;);</span><br><span class="line">INSERT INTO `dept` (`deptno`, `dname`, `loc`) VALUES (50, &#x27;ADMIN&#x27;, &#x27;suzhou&#x27;);</span><br><span class="line">COMMIT;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for emp</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `emp`;</span><br><span class="line">CREATE TABLE `emp` (</span><br><span class="line">  `empno` int NOT NULL,</span><br><span class="line">  `ename` varchar(10) DEFAULT NULL,</span><br><span class="line">  `job` varchar(9) DEFAULT NULL,</span><br><span class="line">  `mgr` int DEFAULT NULL,</span><br><span class="line">  `hiredate` date DEFAULT NULL,</span><br><span class="line">  `salary` float DEFAULT NULL,</span><br><span class="line">  `comm` float DEFAULT NULL,</span><br><span class="line">  `deptno` int DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`empno`),</span><br><span class="line">  KEY `fk_emp_dept` (`deptno`),</span><br><span class="line">  CONSTRAINT `fk_emp_dept` FOREIGN KEY (`deptno`) REFERENCES `dept` (`deptno`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of emp</span><br><span class="line">-- ----------------------------</span><br><span class="line">BEGIN;</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7369, &#x27;SMITH&#x27;, &#x27;CLERK&#x27;, 7902, &#x27;1980-12-17&#x27;, 800, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7499, &#x27;ALLEN&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-02-20&#x27;, 1600, 300, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7521, &#x27;WARD&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-02-22&#x27;, 1250, 500, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7566, &#x27;JONES&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1981-04-02&#x27;, 2975, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7654, &#x27;MARTIN&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-05-01&#x27;, 1250, 1400, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7698, &#x27;BLAKE&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1981-06-09&#x27;, 2850, NULL, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7782, &#x27;CLARK&#x27;, &#x27;MANAGER&#x27;, 7839, &#x27;1987-07-01&#x27;, 2450, NULL, 10);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7788, &#x27;SCOTT&#x27;, &#x27;ANALYST&#x27;, 7566, &#x27;1981-11-17&#x27;, 3000, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7839, &#x27;KING&#x27;, &#x27;PRESIDENT&#x27;, NULL, &#x27;1987-12-03&#x27;, 5000, NULL, 10);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7844, &#x27;TURNER&#x27;, &#x27;SALESMAN&#x27;, 7698, &#x27;1981-03-12&#x27;, 1500, 0, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7876, &#x27;ADAMS&#x27;, &#x27;CLERK&#x27;, 7788, &#x27;1981-02-13&#x27;, 1100, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7900, &#x27;JAMES&#x27;, &#x27;CLERK&#x27;, 7698, &#x27;1981-12-03&#x27;, 950, NULL, 30);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7902, &#x27;FORD&#x27;, &#x27;ANALYST&#x27;, 7566, &#x27;1981-09-08&#x27;, 3000, NULL, 20);</span><br><span class="line">INSERT INTO `emp` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `salary`, `comm`, `deptno`) VALUES (7934, &#x27;MILLER&#x27;, &#x27;CLERK&#x27;, 7782, &#x27;1981-06-02&#x27;, 1300, NULL, 10);</span><br><span class="line">COMMIT;</span><br><span class="line"></span><br><span class="line">SET FOREIGN_KEY_CHECKS = 1;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-
-
-
-<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="【0-简单查询】"><a href="#【0-简单查询】" class="headerlink" title="【0. 简单查询】"></a>【0. 简单查询】</h4><ol>
-<li><p>查出在10部门的员工名字,工资</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	deptno = 10;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>找出工资大于1200元的员工全名、工资、职称</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary,</span><br><span class="line">	job </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary &gt; 1200;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>查出在10，30部门的员工名,薪水</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	salary </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	deptno IN ( 10, 30 );</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>找出工资大于1500并且没有提成的员工</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary &gt; 1500 </span><br><span class="line">	AND comm IS NULL;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查出名字是以M打头的员工</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	SUBSTR( ename, 1, 1 ) = &#x27;M&#x27;;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查出姓名中第三个字母是e的员工</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	SUBSTR( ename, 3, 1 ) = &#x27;e&#x27;;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>找出没有提成率的员工</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	comm IS NULL;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>找出工资在950(含)至1200(含)元的员工姓名、职称</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	job </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	salary BETWEEN 950 </span><br><span class="line">	AND 1200;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>找出2月份入职的员工名、入职时间、工资</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	ename,</span><br><span class="line">	hiredate,</span><br><span class="line">	salary</span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">WHERE</span><br><span class="line">	MONTH(hiredate) = 2;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查询出所有员工的职位，不重复</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	DISTINCT job</span><br><span class="line">FROM</span><br><span class="line">	emp ;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查询出各个部门的员工数量</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT</span><br><span class="line">	COUNT( ename ) 员工数量,</span><br><span class="line">	dept.dname 部门</span><br><span class="line">FROM</span><br><span class="line">	emp</span><br><span class="line">	LEFT JOIN dept ON dept.deptno = emp.deptno</span><br><span class="line">GROUP BY</span><br><span class="line">	dept.deptno;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查询出各年份入职的员工情况（年份，员工人数）</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT </span><br><span class="line">	YEAR( hiredate ) 年份,</span><br><span class="line">	COUNT( empno ) </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">GROUP BY 年份;</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>查询出每年每月入职的员工情况（年份月份，员工人数）</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT </span><br><span class="line">	DATE_FORMAT(hiredate,&#x27;%Y年%m月&#x27;)年份,</span><br><span class="line">	COUNT( empno ) </span><br><span class="line">FROM</span><br><span class="line">	emp </span><br><span class="line">GROUP BY 年份;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h4 id="【1-字符函数】"><a href="#【1-字符函数】" class="headerlink" title="【1. 字符函数】"></a>【1. 字符函数】</h4><ol>
-<li><p>获得’goodmorning’ 的字符长度</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT CHAR_LENGTH(&#x27;goodmorning&#x27;);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将Hello全部转换成小写字母</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT LOWER(&#x27;Hello&#x27;);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将Hello全部转换成大写字母</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT UPPER(&#x27;Hello&#x27;);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将hello首字母变为大写字母	 </p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT INSERT(&#x27;hello&#x27;,1,1,UPPER(SUBSTR(&#x27;hello&#x27;,1,1)));</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将’hello’ 与 ‘tom’  ,’good’拼接成一个单词</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT CONCAT(&#x27;hello&#x27;,&#x27;tom&#x27;,&#x27;good&#x27;);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得’goodmorning’ 的第4 个字母	 </p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT SUBSTR(&#x27;goodmorning&#x27;,4,1);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>截取’goodmorning’ 的monring 单词</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT SUBSTR(&#x27;goodmorning&#x27;,POSITION(&#x27;morning&#x27; IN &#x27;goodmorning&#x27;),CHAR_LENGTH(&#x27;morning&#x27;));</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>截取’Good  morning ！I’m Tom ‘   中的’o’ 用’A’来替代</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT REPLACE(&#x27;Good  morning ！I\&#x27;m Tom&#x27;,&#x27;o&#x27;,&#x27;A&#x27;)</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h4 id="【2-日期函数】"><a href="#【2-日期函数】" class="headerlink" title="【2. 日期函数】"></a>【2. 日期函数】</h4><ol>
-<li><p>获得当前日期</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT NOW()</span><br></pre></td></tr></table></figure></div>
-
-
-</li>
-<li><p>获得某一个日期的年份，月份，日期</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT YEAR(NOW()),MONTH(NOW()), DAY(NOW());</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得某一个日期的星期</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DAYOFWEEK(NOW())-1;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得当前日期的时分秒</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_FORMAT(NOW(),&#x27;%H:%i:%s&#x27;);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得2天后的日期</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_ADD(NOW(),interval 2 day);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得前2天的日期</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT DATE_SUB(NOW(),interval 2 day);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得两个日期相差的年份，月份，天数</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT timestampdiff(YEAR,&#x27;2000-11-28&#x27;,NOW()),timestampdiff(MONTH,&#x27;2000-11-28&#x27;,NOW()),timestampdiff(DAY,&#x27;2000-11-28&#x27;,NOW());</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h4 id="【3-数值函数】"><a href="#【3-数值函数】" class="headerlink" title="【3. 数值函数】"></a>【3. 数值函数】</h4><ol>
-<li><p>获得38934.4383的整数部分</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT truncate(38934.4383,0)</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将38934.4387的保留2位小数，不需要四舍五入</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT truncate(38934.4383,2)</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>将38934.4387的保留2位小数，需要四舍五入</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT ROUND(38934.4383,2);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得不小于38934.4383的最小正整数</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT ceiling(38934.4383);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>获得不大于38934.4383的最大的正整数</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">SELECT floor(38934.4383);</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-]]></content>
       <tags>
         <tag>mysql</tag>
       </tags>
