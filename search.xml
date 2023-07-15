@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IntelliJ IDEA 2022.1永久破解激活教程</title>
     <url>/posts/75da42b1.html</url>
     <content><![CDATA[<h1 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h1><p>JetBrains 是一家专注于创建智能开发工具的前沿软件公司,包括:行业中领头的 Java IDE – IntelliJ IDEA,以及 Kotlin 编程语言。旗下常用的软件有<strong>IntelliJ IDEA、PhpStorm、RubyMine、Rider、WebStorm、goland、CLion、Pycharm，本安装包集成以上8款软件</strong>，用户可根据自己的需求选择安装一款或多款。</p>
@@ -423,7 +444,7 @@
 <div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ipconfig</span>/release</span><br></pre></td></tr></table></figure></div>
 
 <p>d. 尝试ping github.com</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">ping github.com</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Autoit"><figure class="iseeu highlight autoit"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ping</span> github.com</span><br></pre></td></tr></table></figure></div>
 
 <p>a步骤超时的话换一个节点继续重复abcd.</p>
 <p>至此就可以访问github,如果有魔法就不用这么弄了.</p>
@@ -469,27 +490,6 @@
         <tag>Hexo</tag>
         <tag>Github</tag>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -620,7 +620,7 @@
 
 <p><strong>i. 安装 nginx</strong></p>
 <p>①切换到 root 帐号，输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo su root</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -630,7 +630,7 @@
                 >  
 
 <p>②需要使用 nginx 作为 Web 服务器，所以我们首先要安装 nginx。可以使用 yum 命令直接进行安装：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install -y nginx</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> -y nginx</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -640,7 +640,7 @@
                 > 
 
 <p>③安装完成后启动 nginx 服务器，命令如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Nsis"><figure class="iseeu highlight nsis"><table><tr><td class="code"><pre><span class="line"><span class="params">system</span>ctl start nginx</span><br><span class="line"><span class="params">system</span>ctl enable nginx</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -653,7 +653,7 @@
 
 <p><strong>ii. 建立博客根目录</strong></p>
 <p>将博客的页面文件放在&#x2F;home&#x2F;www&#x2F;website&#x2F;路径下，需要先创建这些文件。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /home</span><br><span class="line">mkdir www</span><br><span class="line">cd www</span><br><span class="line">mkdir website</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home</span><br><span class="line"><span class="built_in">mkdir</span> www</span><br><span class="line"><span class="built_in">cd</span> www</span><br><span class="line"><span class="built_in">mkdir</span> website</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -671,7 +671,7 @@
 <p>建立了博客的根目录后，需要将 nginx 服务器指向这个根目录地址，才能访问到博客页面，所以需要修改 nginx 的配置文件。</p>
 <p>阿里云默认的库下载的是基于 fedora 的 nginx，查阅资料发现，默认配置文件位于etc&#x2F;nginx&#x2F;下的nginx.conf。</p>
 <p>查看 nginx 的默认配置文件：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd /etc/nginx</span><br><span class="line">ls</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> /etc/nginx</span><br><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -686,7 +686,7 @@
 <p>但不采用直接修改 nginx 配置文件的方式，而是新建一个文件夹，将自己的配置写在新建的文件夹中。再利用include，在配置文件nginx.conf中将文件夹引入进来即可。</p>
 <p>这样若有新的需求时，只需在文件夹中添加新需求的配置文件即可，不会再次修改配置文件nginx.conf，提高效率。</p>
 <p>切换&#x2F;etc&#x2F;nginx&#x2F;目录，在此目录下创建一个文件夹vhost：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /etc/nginx</span><br><span class="line">mkdir vhost</span><br><span class="line">cd vhost</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/nginx</span><br><span class="line"><span class="built_in">mkdir</span> vhost</span><br><span class="line"><span class="built_in">cd</span> vhost</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -696,7 +696,7 @@
                 > 
 
 <p>输入vim blog.conf新建blog.conf文件并编辑内容：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">			listen    80;</span><br><span class="line">			root /home/www/website;</span><br><span class="line">			server_name test.top;</span><br><span class="line">			location /&#123;        </span><br><span class="line">			&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Abnf"><figure class="iseeu highlight abnf"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">			listen    <span class="number">80</span><span class="comment">;</span></span><br><span class="line">			root /home/www/website<span class="comment">;</span></span><br><span class="line">			server_name test.top<span class="comment">;</span></span><br><span class="line">			location /&#123;        </span><br><span class="line">			&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -742,7 +742,7 @@
 
 <p><strong>4、安装nodeJS</strong></p>
 <p>输入输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -sL https://rpm.nodesource.com/setup_10.x | bash - yum install -y nodejs</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Armasm"><figure class="iseeu highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">curl</span> -<span class="built_in">sL</span> https:<span class="comment">//rpm.nodesource.com/setup_10.x | bash - yum install -y nodejs</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -781,7 +781,7 @@
 <h2 id="步骤四：配置服务端Git"><a href="#步骤四：配置服务端Git" class="headerlink" title="步骤四：配置服务端Git"></a>步骤四：配置服务端Git</h2><p>这一部分主要目的是本地电脑可以通过ssh方式连接到云服务器，然后就可以通过命令行方式将博客传到云服务器上。</p>
 <p><strong>1、安装Git</strong></p>
 <p>输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="code"><pre><span class="line">yum <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -799,7 +799,7 @@
 
 <p><strong>2、配置Git用户</strong></p>
 <p>输入以下命令添加 Git 用户：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">adduser git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">adduser git</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -811,12 +811,12 @@
 
 
 <p>修改用户权限命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod 740 /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="code"><pre><span class="line">chmod <span class="number">740</span> <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 
 
 <p>打开&#x2F;etc&#x2F;sudoers命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">vi /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -833,10 +833,10 @@
                 >  
 
 <p>保存退出后，将sudoers文件权限改回原样：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod 400 /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="code"><pre><span class="line">chmod <span class="number">400</span> <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 <p>设置 Git 用户的密码：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo passwd git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">sudo passwd git</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -848,7 +848,7 @@
 
 
 <p>切换到 git 用户，然后在~目录下创建.ssh文件夹，命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">su git</span><br><span class="line">cd ~</span><br><span class="line">mkdir .ssh</span><br><span class="line">cd .ssh</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Jboss-cli"><figure class="iseeu highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">su git</span><br><span class="line"><span class="keyword">cd</span> ~</span><br><span class="line">mkdir <span class="string">.ssh</span></span><br><span class="line"><span class="keyword">cd</span> <span class="string">.ssh</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -861,11 +861,11 @@
 
 <p><strong>3、配置Git密钥</strong></p>
 <p>生成公钥密钥文件命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">ssh-keygen</span></span><br></pre></td></tr></table></figure></div>
 
 <p>输入后都按回车即可！！！</p>
 <p>此时在目录下就会有两个文件，分别是id_rsa和id_rsa.pub，其中id_rsa.pub就是公钥文件，复制一份：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp id_rsa.pub authorized_keys</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Avrasm"><figure class="iseeu highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">cp</span> id_rsa.pub authorized_keys</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -877,7 +877,7 @@
 
 
 <p>这样目录下就会有一个authorized_keys文件，修改它的权限：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod 600 ~/.ssh/authorized_keys</span><br><span class="line">chmod 700 ~/.ssh</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 600 ~/.ssh/authorized_keys</span><br><span class="line"><span class="built_in">chmod</span> 700 ~/.ssh</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -920,7 +920,7 @@
                 > 
 
 <p>可以看到</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">Offending ECDSA key in /c/Users/jonty/.ssh/known_hosts:2</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="code"><pre><span class="line">Offending ECDSA key <span class="keyword">in</span> <span class="regexp">/c/</span>Users<span class="regexp">/jonty/</span>.ssh/known_hosts:<span class="number">2</span></span><br></pre></td></tr></table></figure></div>
 
 <p>是.ssh&#x2F;known_hosts 这个文件第二行出现冲突了。只要用笔记本打开，将这个文件的第二行删掉即可。</p>
 <img  
@@ -931,7 +931,7 @@
                 >  
 
 <p>重新执行刚刚的命令</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -v git@你的服务器ip</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Angelscript"><figure class="iseeu highlight angelscript"><table><tr><td class="code"><pre><span class="line">ssh -v <span class="symbol">git@</span>你的服务器ip</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -943,10 +943,10 @@
 <p>这说明已经连接成功了。</p>
 <p><strong>4、创建Git仓库</strong></p>
 <p>创建一个 Git 的仓库，并且新建一个post-receive文件</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd /home/git/</span><br><span class="line">git init --bare blog.git</span><br><span class="line">cd blog.git/hooks/</span><br><span class="line">vim post-receive</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> /home/git/</span><br><span class="line">git init --bare blog.git</span><br><span class="line"><span class="built_in">cd</span> blog.git/hooks/</span><br><span class="line">vim post-receive</span><br></pre></td></tr></table></figure></div>
 
 <p>输入以下内容：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --work-tree=/home/www/website --git-dir=/home/git/blog.git checkout -f</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="code"><pre><span class="line">git --work-tree=<span class="regexp">/home/</span>www<span class="regexp">/website --git-dir=/</span>home<span class="regexp">/git/</span>blog.git checkout -f</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -958,7 +958,7 @@
 
 
 <p>保存退出并授予该文件可执行权限，命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod +x post-receive</span><br><span class="line">sudo chown -R git:git /home/www/website</span><br><span class="line">sudo chown -R git:git /home/git/</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x post-receive</span><br><span class="line">sudo <span class="built_in">chown</span> -R git:git /home/www/website</span><br><span class="line">sudo <span class="built_in">chown</span> -R git:git /home/git/</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -1039,7 +1039,7 @@
 </li>
 <li><blockquote>
 <p>下载压缩包,并解压在一个 非C盘、非中文、非特殊符号的路径下,例如:</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">D:\\soft\\mysql-8.0.30-winx64</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Apache"><figure class="iseeu highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">D</span>:\\soft\\mysql-<span class="number">8</span>.<span class="number">0</span>.<span class="number">30</span>-winx64</span><br></pre></td></tr></table></figure></div>
 </blockquote>
 </li>
 <li><p><strong>进行一个环境变量的配置</strong></p>
@@ -1144,6 +1144,94 @@
 ]]></content>
       <tags>
         <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue学习笔记</title>
+    <url>/posts/71513ccb.html</url>
+    <content><![CDATA[<h3 id="1-Vue简介"><a href="#1-Vue简介" class="headerlink" title="1. Vue简介"></a>1. Vue简介</h3><h4 id="1-Vue是什么"><a href="#1-Vue是什么" class="headerlink" title="1. Vue是什么?"></a>1. Vue是什么?</h4><blockquote>
+<p>是一套用于构建用户界面的<strong>渐进式框架</strong>。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与<a class="link"   href="https://v2.cn.vuejs.org/v2/guide/single-file-components.html" >现代化的工具链 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>以及各种<a class="link"   href="https://github.com/vuejs/awesome-vue#libraries--plugins" >支持类库 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p>
+<ul>
+<li><code>构建用户界面:将手中的数据通过某种方法, 变成用户可以看到的界面</code></li>
+<li><code>渐进式:Vue是可以自底向上逐层的应用.如果为简单应用,只需要一个轻量小巧的核心库,如果为复杂应用,可以引用各式各样的 Vue插件. 也就是从一个轻量小巧的核心库,逐渐递进到Vue插件库</code></li>
+</ul>
+</blockquote>
+<h4 id="2-由谁开发"><a href="#2-由谁开发" class="headerlink" title="2.由谁开发?"></a>2.由谁开发?</h4><p><code>沈雨溪</code></p>
+<h4 id="3-Vue的特点"><a href="#3-Vue的特点" class="headerlink" title="3. Vue的特点"></a>3. Vue的特点</h4><blockquote>
+<ol>
+<li><p>采用组件化模式, 提高代码复用率,且让代码更好维护.</p>
+<p><code>组件化:一个页面中可能有多个模块,可将模块分成不同的XXX.Vue页面书写,封装成组件</code></p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/posts/71513ccb/%E7%BB%84%E4%BB%B6%E5%BC%8F.png"
+                      class=""
+                > 
+
+
+</li>
+<li><p>​	声明式编码,让编码人员无需直接操作DOM, 提高开放效率</p>
+</li>
+<li><p>使用虚拟DOM+优秀的DIff算法,尽量复用DOM节点</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/posts/71513ccb/Diff.png"
+                      class=""
+                ></li>
+</ol>
+</blockquote>
+<h4 id="4-Vue2官网指南使用"><a href="#4-Vue2官网指南使用" class="headerlink" title="4. Vue2官网指南使用"></a>4. Vue2官网指南使用</h4><blockquote>
+<p> <a class="link"   href="https://v2.cn.vuejs.org/" >https://v2.cn.vuejs.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>顶部导航——学习——教程&amp;API：最重要的两个部分（API相当于是Vue的字典）；</p>
+<p>顶部导航——学习——风格指南：写出更加优雅的代码，有优先级A（必要的）、B（强烈推荐）、C（推荐）等；</p>
+<p>顶部导航——学习——Cookbook：Vue的使用技巧；</p>
+<p>顶部导航——生态系统——帮助&amp;信息：不重要，可不看；</p>
+<p>顶部导航——生态系统——工具&amp;插件：重要，后期需要，如脚手架、路由等:</p>
+</blockquote>
+<h4 id="5-搭建Vue开发环境"><a href="#5-搭建Vue开发环境" class="headerlink" title="5. 搭建Vue开发环境"></a>5. 搭建Vue开发环境</h4><ol>
+<li><strong>下载引入开发版本的Vue.js</strong></li>
+</ol>
+<p><code>最开始使用Vue不推荐Vue-cli的方式，开始使用的是在.html中引入Vue。</code></p>
+<ol start="2">
+<li>安装开发者工具</li>
+</ol>
+<p><a class="link"   href="https://gitee.com/link?target=https://devtools.vuejs.org/guide/installation.html" >https://devtools.vuejs.org/guide/installation.html <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>关闭提示</p>
+<p><code>全局配置vue.config，去除提示</code></p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="code"><pre><span class="line">Vue.config.productionTip=false</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p><code>未必生效,若不生效,直接修改vue.js源码即可</code></p>
+<h3 id="2-Vue基础部分"><a href="#2-Vue基础部分" class="headerlink" title="2. Vue基础部分"></a>2. Vue基础部分</h3><h4 id="2-1-Vue程序初体验"><a href="#2-1-Vue程序初体验" class="headerlink" title="2.1 Vue程序初体验"></a>2.1 Vue程序初体验</h4><h5 id="01-第一个Vue程序"><a href="#01-第一个Vue程序" class="headerlink" title="01-第一个Vue程序"></a>01-<strong>第一个Vue程序</strong></h5><p><code>hello Word!示例代码</code></p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个Vue程序<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- 安装vue：当你使用script进行Vue安装之后，上下文中就注册了一个全局变量：Vue --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;../js/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- 指定Vue实例的挂载位置。 --&gt;</span></span><br><span class="line"> <span class="comment">&lt;!-- &lt;div id=&quot;app&quot;&gt;&lt;/div&gt; --&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">   	<span class="comment">/* </span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">     第一步：创建Vue实例</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        1. 为什么要new Vue()，直接调用Vue()函数不行吗？</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            不行，因为直接调用Vue()函数，不创建实例的话，会出现以下错误：</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">                Vue is a constructor and should be called with the `new` keyword</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        2. 关于Vue构造函数的参数：options？</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            option翻译为选项</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            options翻译为多个选项</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            Vue框架要求这个options参数必须是一个纯粹的JS对象：&#123;&#125;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            在&#123;&#125;对象中可以编写大量的key:value对。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            一个key:value对就是一个配置项。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            主要是通过options这个参数来给Vue实例指定多个配置项。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        3. 关于template配置项：</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            template翻译为：模板。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            template配置项用来指定什么？用来指定模板语句，模板语句是一个字符串形式的。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            什么是模板语句？</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">                Vue框架自己制定了一些具有特殊含义的特殊符号。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">                Vue的模板语句是Vue框架自己搞的一套语法规则。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">                我们写Vue模板语句的时候，不能乱写，要遵守Vue框架的模板语法规则。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            模板语句可以是一个纯粹的HTML代码，也可以是Vue中的特殊规则。也可以是HTML代码 + Vue的特殊规则。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            template后面的模板语句会被Vue框架的编译器进行编译，转换成浏览器能够识别的HTML代码。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        */</span></span></span><br><span class="line"><span class="language-javascript">      	<span class="keyword">const</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">            template : <span class="string">&#x27;&lt;h1&gt;Hello Vue!!!!!&lt;/h1&gt;&#x27;</span></span></span><br><span class="line"><span class="language-javascript">        &#125;)</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">/* </span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        第二步：将Vue实例挂载到id=&#x27;app&#x27;的元素位置。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        1. Vue实例都有一个$mount()方法，这个方法的作用是什么？</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            将Vue实例挂载到指定位置。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        2. #app 显然是ID选择器。这个语法借鉴了CSS。</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        */</span></span></span><br><span class="line"><span class="language-javascript">        myVue.$mount(<span class="string">&#x27;#app&#x27;</span>)</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//myVue.$mount(document.getElementById(&#x27;app&#x27;))</span></span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h5 id="02-模版语句的数据来源"><a href="#02-模版语句的数据来源" class="headerlink" title="02-模版语句的数据来源"></a>02-模版语句的数据来源</h5><p>模版语句的数据来源 :</p>
+<ol>
+<li><p>谁可以给模版语句提供数据支持呢? 	<code>data选项</code></p>
+</li>
+<li><p>data选项的类型是什么? <code>Object</code>  |  <code> Function</code>  (对象或者函数)</p>
+</li>
+<li><p>data配置项的专业叫法: Vue实例的数据对象. (data实际上是给整个Vue实例提供数据来源的.)</p>
+</li>
+<li><p>如果data是对象的话,对象必须是纯粹的对象 (含零个或者多个的 Key &#x2F;value 对)</p>
+</li>
+<li><p>data数据是如何插入到模版语句当中的?</p>
+</li>
+</ol>
+<p>​		<code>&#123;&#123;&#125;&#125;</code>这是Vue框架自己搞得一套语法,别的框架看不懂的浏览器也是不能识别的. </p>
+<p>​		Vue框架自己能够看懂的,这种语法在Vue框架中被称为: 模版语法中的插值语法.(有人把他叫做胡子语法)</p>
+<p>​		怎么用?</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line">&#123;&#123;data的key&#125;&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>​		插值语法的小细节</p>
+<p>{<code>这个位置不能够包含其他字符包括空格</code>{}<code>这个位置不能够包含其他字符包括空格</code>}</p>
+<div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>模板语句的数据来源<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 安装Vue --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;../js/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 指定挂载位置 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- vue程序 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-handlebars"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">         new Vue(&#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">            template : `<span class="tag">&lt;<span class="name">h1</span>&gt;</span>最近非常火爆的电视剧</span><span class="template-variable">&#123;&#123;<span class="name">name</span>&#125;&#125;</span><span class="language-xml">，它的上映日期是</span><span class="template-variable">&#123;&#123;<span class="name">releaseTime</span>&#125;&#125;</span><span class="language-xml">。主角是</span><span class="template-variable">&#123;&#123;<span class="name">lead.name</span>&#125;&#125;</span><span class="language-xml">，年龄是</span><span class="template-variable">&#123;&#123;<span class="name">lead.age</span>&#125;&#125;</span><span class="language-xml">岁。</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                其他演员包括：</span><span class="template-variable">&#123;&#123;<span class="name">actors</span>[0].name&#125;&#125;</span><span class="language-xml">(</span><span class="template-variable">&#123;&#123;<span class="name">actors</span>[0].age&#125;&#125;</span><span class="language-xml">岁)，</span><span class="template-variable">&#123;&#123;<span class="name">actors</span>[1].name&#125;&#125;</span><span class="language-xml">(</span><span class="template-variable">&#123;&#123;<span class="name">actors</span>[1].age&#125;&#125;</span><span class="language-xml">岁)。</span><span class="template-variable">&#123;&#123;<span class="name">a.b.c.d.e.name</span>&#125;&#125;</span><span class="language-xml"></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                <span class="tag">&lt;/<span class="name">h1</span>&gt;</span>`,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">            data : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                name : &#x27;狂飙!!!&#x27;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                releaseTime : &#x27;2023年1月2日&#x27;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                lead : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    name : &#x27;高启强&#x27;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    age : 41</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                &#125;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                actors : [</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        name : &#x27;安欣&#x27;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        age : 41</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    &#125;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        name : &#x27;高启兰&#x27;,</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        age : 29</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                ],</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                a : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    b : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        c : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                            d : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                                e : &#123;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                                    name : &#x27;呵呵&#x27;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                                &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                            &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                        &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                    &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">                &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">            &#125;</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">        &#125;).$mount(&#x27;#app&#x27;)</span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">    </span></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+]]></content>
+      <tags>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -1282,72 +1370,6 @@
 ]]></content>
       <tags>
         <tag>mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue学习笔记</title>
-    <url>/posts/71513ccb.html</url>
-    <content><![CDATA[<h3 id="1-Vue简介"><a href="#1-Vue简介" class="headerlink" title="1. Vue简介"></a>1. Vue简介</h3><h4 id="1-Vue是什么"><a href="#1-Vue是什么" class="headerlink" title="1. Vue是什么?"></a>1. Vue是什么?</h4><blockquote>
-<p>是一套用于构建用户界面的<strong>渐进式框架</strong>。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与<a class="link"   href="https://v2.cn.vuejs.org/v2/guide/single-file-components.html" >现代化的工具链 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>以及各种<a class="link"   href="https://github.com/vuejs/awesome-vue#libraries--plugins" >支持类库 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p>
-<ul>
-<li><code>构建用户界面:将手中的数据通过某种方法, 变成用户可以看到的界面</code></li>
-<li><code>渐进式:Vue是可以自底向上逐层的应用.如果为简单应用,只需要一个轻量小巧的核心库,如果为复杂应用,可以引用各式各样的 Vue插件. 也就是从一个轻量小巧的核心库,逐渐递进到Vue插件库</code></li>
-</ul>
-</blockquote>
-<h4 id="2-由谁开发"><a href="#2-由谁开发" class="headerlink" title="2.由谁开发?"></a>2.由谁开发?</h4><p><code>沈雨溪</code></p>
-<h4 id="3-Vue的特点"><a href="#3-Vue的特点" class="headerlink" title="3. Vue的特点"></a>3. Vue的特点</h4><blockquote>
-<ol>
-<li><p>采用组件化模式, 提高代码复用率,且让代码更好维护.</p>
-<p><code>组件化:一个页面中可能有多个模块,可将模块分成不同的XXX.Vue页面书写,封装成组件</code></p>
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/posts/71513ccb/%E7%BB%84%E4%BB%B6%E5%BC%8F.png"
-                      class=""
-                > 
-
-
-</li>
-<li><p>​	声明式编码,让编码人员无需直接操作DOM, 提高开放效率</p>
-</li>
-<li><p>使用虚拟DOM+优秀的DIff算法,尽量复用DOM节点</p>
-<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/posts/71513ccb/Diff.png"
-                      class=""
-                ></li>
-</ol>
-</blockquote>
-<h4 id="4-Vue2官网指南使用"><a href="#4-Vue2官网指南使用" class="headerlink" title="4. Vue2官网指南使用"></a>4. Vue2官网指南使用</h4><blockquote>
-<p> <a class="link"   href="https://v2.cn.vuejs.org/" >https://v2.cn.vuejs.org/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>顶部导航——学习——教程&amp;API：最重要的两个部分（API相当于是Vue的字典）；</p>
-<p>顶部导航——学习——风格指南：写出更加优雅的代码，有优先级A（必要的）、B（强烈推荐）、C（推荐）等；</p>
-<p>顶部导航——学习——Cookbook：Vue的使用技巧；</p>
-<p>顶部导航——生态系统——帮助&amp;信息：不重要，可不看；</p>
-<p>顶部导航——生态系统——工具&amp;插件：重要，后期需要，如脚手架、路由等:</p>
-</blockquote>
-<h4 id="5-搭建Vue开发环境"><a href="#5-搭建Vue开发环境" class="headerlink" title="5. 搭建Vue开发环境"></a>5. 搭建Vue开发环境</h4><ol>
-<li><strong>下载引入开发版本的Vue.js</strong></li>
-</ol>
-<p><code>最开始使用Vue不推荐Vue-cli的方式，开始使用的是在.html中引入Vue。</code></p>
-<ol start="2">
-<li>安装开发者工具</li>
-</ol>
-<p><a class="link"   href="https://gitee.com/link?target=https://devtools.vuejs.org/guide/installation.html" >https://devtools.vuejs.org/guide/installation.html <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>关闭提示</p>
-<p><code>全局配置vue.config，去除提示</code></p>
-<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="code"><pre><span class="line">Vue.config.productionTip=false</span><br></pre></td></tr></table></figure></div>
-
-
-
-<p><code>未必生效,若不生效,直接修改vue.js源码即可</code></p>
-<h3 id="2-第一个Vue程序"><a href="#2-第一个Vue程序" class="headerlink" title="2. 第一个Vue程序"></a>2. 第一个Vue程序</h3><p><code>hello Word!示例代码</code></p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;zh-CN&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line"> &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line"> &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span><br><span class="line"> &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line"> &lt;title&gt;第一个Vue程序&lt;/title&gt;</span><br><span class="line"> &lt;!-- 安装vue：当你使用script进行Vue安装之后，上下文中就注册了一个全局变量：Vue --&gt;</span><br><span class="line"> &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"> &lt;!-- 指定Vue实例的挂载位置。 --&gt;</span><br><span class="line"> &lt;!-- &lt;div id=&quot;app&quot;&gt;&lt;/div&gt; --&gt;</span><br><span class="line"> &lt;hr&gt;</span><br><span class="line"> &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</span><br><span class="line"> &lt;script&gt;</span><br><span class="line">   	/* </span><br><span class="line">     第一步：创建Vue实例</span><br><span class="line">        1. 为什么要new Vue()，直接调用Vue()函数不行吗？</span><br><span class="line">            不行，因为直接调用Vue()函数，不创建实例的话，会出现以下错误：</span><br><span class="line">                Vue is a constructor and should be called with the `new` keyword</span><br><span class="line">        2. 关于Vue构造函数的参数：options？</span><br><span class="line">            option翻译为选项</span><br><span class="line">            options翻译为多个选项</span><br><span class="line">            Vue框架要求这个options参数必须是一个纯粹的JS对象：&#123;&#125;</span><br><span class="line">            在&#123;&#125;对象中可以编写大量的key:value对。</span><br><span class="line">            一个key:value对就是一个配置项。</span><br><span class="line">            主要是通过options这个参数来给Vue实例指定多个配置项。</span><br><span class="line">        3. 关于template配置项：</span><br><span class="line">            template翻译为：模板。</span><br><span class="line">            template配置项用来指定什么？用来指定模板语句，模板语句是一个字符串形式的。</span><br><span class="line">            什么是模板语句？</span><br><span class="line">                Vue框架自己制定了一些具有特殊含义的特殊符号。</span><br><span class="line">                Vue的模板语句是Vue框架自己搞的一套语法规则。</span><br><span class="line">                我们写Vue模板语句的时候，不能乱写，要遵守Vue框架的模板语法规则。</span><br><span class="line">            模板语句可以是一个纯粹的HTML代码，也可以是Vue中的特殊规则。也可以是HTML代码 + Vue的特殊规则。</span><br><span class="line">            template后面的模板语句会被Vue框架的编译器进行编译，转换成浏览器能够识别的HTML代码。</span><br><span class="line">        */</span><br><span class="line">      	const vm = new Vue(&#123;</span><br><span class="line">            template : &#x27;&lt;h1&gt;Hello Vue!!!!!&lt;/h1&gt;&#x27;</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        /* </span><br><span class="line">        第二步：将Vue实例挂载到id=&#x27;app&#x27;的元素位置。</span><br><span class="line">        1. Vue实例都有一个$mount()方法，这个方法的作用是什么？</span><br><span class="line">            将Vue实例挂载到指定位置。</span><br><span class="line">        2. #app 显然是ID选择器。这个语法借鉴了CSS。</span><br><span class="line">        */</span><br><span class="line">        myVue.$mount(&#x27;#app&#x27;)</span><br><span class="line">        //myVue.$mount(document.getElementById(&#x27;app&#x27;))</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></div>
-
-]]></content>
-      <tags>
-        <tag>vue</tag>
       </tags>
   </entry>
 </search>

@@ -556,7 +556,7 @@
 
 <p><strong>i. 安装 nginx</strong></p>
 <p>①切换到 root 帐号，输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo su root</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -566,7 +566,7 @@
                 >  
 
 <p>②需要使用 nginx 作为 Web 服务器，所以我们首先要安装 nginx。可以使用 yum 命令直接进行安装：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y nginx</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> -y nginx</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -576,7 +576,7 @@
                 > 
 
 <p>③安装完成后启动 nginx 服务器，命令如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Nsis"><figure class="iseeu highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">system</span>ctl start nginx</span><br><span class="line"><span class="params">system</span>ctl enable nginx</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -589,7 +589,7 @@
 
 <p><strong>ii. 建立博客根目录</strong></p>
 <p>将博客的页面文件放在&#x2F;home&#x2F;www&#x2F;website&#x2F;路径下，需要先创建这些文件。</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /home</span><br><span class="line">mkdir www</span><br><span class="line">cd www</span><br><span class="line">mkdir website</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home</span><br><span class="line"><span class="built_in">mkdir</span> www</span><br><span class="line"><span class="built_in">cd</span> www</span><br><span class="line"><span class="built_in">mkdir</span> website</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -607,7 +607,7 @@
 <p>建立了博客的根目录后，需要将 nginx 服务器指向这个根目录地址，才能访问到博客页面，所以需要修改 nginx 的配置文件。</p>
 <p>阿里云默认的库下载的是基于 fedora 的 nginx，查阅资料发现，默认配置文件位于etc&#x2F;nginx&#x2F;下的nginx.conf。</p>
 <p>查看 nginx 的默认配置文件：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd /etc/nginx</span><br><span class="line">ls</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> /etc/nginx</span><br><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -622,7 +622,7 @@
 <p>但不采用直接修改 nginx 配置文件的方式，而是新建一个文件夹，将自己的配置写在新建的文件夹中。再利用include，在配置文件nginx.conf中将文件夹引入进来即可。</p>
 <p>这样若有新的需求时，只需在文件夹中添加新需求的配置文件即可，不会再次修改配置文件nginx.conf，提高效率。</p>
 <p>切换&#x2F;etc&#x2F;nginx&#x2F;目录，在此目录下创建一个文件夹vhost：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx</span><br><span class="line">mkdir vhost</span><br><span class="line">cd vhost</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/nginx</span><br><span class="line"><span class="built_in">mkdir</span> vhost</span><br><span class="line"><span class="built_in">cd</span> vhost</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -632,7 +632,7 @@
                 > 
 
 <p>输入vim blog.conf新建blog.conf文件并编辑内容：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">			listen    80;</span><br><span class="line">			root /home/www/website;</span><br><span class="line">			server_name test.top;</span><br><span class="line">			location /&#123;        </span><br><span class="line">			&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Abnf"><figure class="iseeu highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">			listen    <span class="number">80</span><span class="comment">;</span></span><br><span class="line">			root /home/www/website<span class="comment">;</span></span><br><span class="line">			server_name test.top<span class="comment">;</span></span><br><span class="line">			location /&#123;        </span><br><span class="line">			&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -678,7 +678,7 @@
 
 <p><strong>4、安装nodeJS</strong></p>
 <p>输入输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://rpm.nodesource.com/setup_10.x | bash - yum install -y nodejs</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Armasm"><figure class="iseeu highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">curl</span> -<span class="built_in">sL</span> https:<span class="comment">//rpm.nodesource.com/setup_10.x | bash - yum install -y nodejs</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -717,7 +717,7 @@
 <h2 id="步骤四：配置服务端Git"><a href="#步骤四：配置服务端Git" class="headerlink" title="步骤四：配置服务端Git"></a>步骤四：配置服务端Git</h2><p>这一部分主要目的是本地电脑可以通过ssh方式连接到云服务器，然后就可以通过命令行方式将博客传到云服务器上。</p>
 <p><strong>1、安装Git</strong></p>
 <p>输入命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> git</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -735,7 +735,7 @@
 
 <p><strong>2、配置Git用户</strong></p>
 <p>输入以下命令添加 Git 用户：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adduser git</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -747,12 +747,12 @@
 
 
 <p>修改用户权限命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 740 /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">740</span> <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 
 
 <p>打开&#x2F;etc&#x2F;sudoers命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -769,10 +769,10 @@
                 >  
 
 <p>保存退出后，将sudoers文件权限改回原样：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 400 /etc/sudoers</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">400</span> <span class="regexp">/etc/</span>sudoers</span><br></pre></td></tr></table></figure></div>
 
 <p>设置 Git 用户的密码：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd git</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo passwd git</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -784,7 +784,7 @@
 
 
 <p>切换到 git 用户，然后在~目录下创建.ssh文件夹，命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su git</span><br><span class="line">cd ~</span><br><span class="line">mkdir .ssh</span><br><span class="line">cd .ssh</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Jboss-cli"><figure class="iseeu highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su git</span><br><span class="line"><span class="keyword">cd</span> ~</span><br><span class="line">mkdir <span class="string">.ssh</span></span><br><span class="line"><span class="keyword">cd</span> <span class="string">.ssh</span></span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -797,11 +797,11 @@
 
 <p><strong>3、配置Git密钥</strong></p>
 <p>生成公钥密钥文件命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Ebnf"><figure class="iseeu highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh-keygen</span></span><br></pre></td></tr></table></figure></div>
 
 <p>输入后都按回车即可！！！</p>
 <p>此时在目录下就会有两个文件，分别是id_rsa和id_rsa.pub，其中id_rsa.pub就是公钥文件，复制一份：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp id_rsa.pub authorized_keys</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Avrasm"><figure class="iseeu highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cp</span> id_rsa.pub authorized_keys</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -813,7 +813,7 @@
 
 
 <p>这样目录下就会有一个authorized_keys文件，修改它的权限：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 600 ~/.ssh/authorized_keys</span><br><span class="line">chmod 700 ~/.ssh</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 600 ~/.ssh/authorized_keys</span><br><span class="line"><span class="built_in">chmod</span> 700 ~/.ssh</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -856,7 +856,7 @@
                 > 
 
 <p>可以看到</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Offending ECDSA key in /c/Users/jonty/.ssh/known_hosts:2</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Offending ECDSA key <span class="keyword">in</span> <span class="regexp">/c/</span>Users<span class="regexp">/jonty/</span>.ssh/known_hosts:<span class="number">2</span></span><br></pre></td></tr></table></figure></div>
 
 <p>是.ssh&#x2F;known_hosts 这个文件第二行出现冲突了。只要用笔记本打开，将这个文件的第二行删掉即可。</p>
 <img  
@@ -867,7 +867,7 @@
                 >  
 
 <p>重新执行刚刚的命令</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -v git@你的服务器ip</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Angelscript"><figure class="iseeu highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -v <span class="symbol">git@</span>你的服务器ip</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -879,10 +879,10 @@
 <p>这说明已经连接成功了。</p>
 <p><strong>4、创建Git仓库</strong></p>
 <p>创建一个 Git 的仓库，并且新建一个post-receive文件</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd /home/git/</span><br><span class="line">git init --bare blog.git</span><br><span class="line">cd blog.git/hooks/</span><br><span class="line">vim post-receive</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"><span class="built_in">cd</span> /home/git/</span><br><span class="line">git init --bare blog.git</span><br><span class="line"><span class="built_in">cd</span> blog.git/hooks/</span><br><span class="line">vim post-receive</span><br></pre></td></tr></table></figure></div>
 
 <p>输入以下内容：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --work-tree=/home/www/website --git-dir=/home/git/blog.git checkout -f</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Awk"><figure class="iseeu highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --work-tree=<span class="regexp">/home/</span>www<span class="regexp">/website --git-dir=/</span>home<span class="regexp">/git/</span>blog.git checkout -f</span><br></pre></td></tr></table></figure></div>
 
 <img  
                      lazyload
@@ -894,7 +894,7 @@
 
 
 <p>保存退出并授予该文件可执行权限，命令：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod +x post-receive</span><br><span class="line">sudo chown -R git:git /home/www/website</span><br><span class="line">sudo chown -R git:git /home/git/</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x post-receive</span><br><span class="line">sudo <span class="built_in">chown</span> -R git:git /home/www/website</span><br><span class="line">sudo <span class="built_in">chown</span> -R git:git /home/git/</span><br></pre></td></tr></table></figure></div>
 
 
 
